@@ -11,3 +11,66 @@
     <script src="scripts.js"></script>
   </body>
 </html>
+
+$("#glosses").html("<p>The glosses will go here.</p>");
+
+let wordString;
+     wordString = word.text;
+     // Test for word.modern OR word.url
+     if (word.modern || word.url){
+       // Either way, we know we need an <a> tag:
+       let aTagStart, aTagEnd;
+       aTagStart = "<a href='#' ";
+       aTagEnd = "</a>";
+       if (word.modern){
+         // If there's a word.modern, add the data-modern attribute.
+         aTagStart = aTagStart + "data-modern='" + word.modern + "' ";
+         // aTagStart is now:
+         // "<a href='#' data-modern='star'"
+       }
+
+       <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Working with Leaflet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+    <link rel="stylesheet" href="leaflet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Working with Leaflet</h1>
+      <div id="first-map" class="map"></div>
+      <p>Above, you can see a Leaflet map.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    <script src="leaflet.js"></script>
+  </body>
+</html>
+
+.map {
+  height: 400px;
+}
+
+let firstMap, tileLayer;
+firstMap = L.map("first-map");
+tileLayer =
+L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png", {
+      attribution: "&copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> &copy; <a href='http://carto.com/attribution'>CARTO</a>",
+      subdomains: "abcd",
+      maxZoom: 18
+    });
+    tileLayer.addTo(firstMap);
+firstMap.setView([40.730833, -73.9975], 16);
+let bobstLibrary;
+bobstLibrary = L.marker([40.729444, -73.997222]);
+bobstLibrary.addTo(firstMap);
+bobstLibrary.bindPopup("This is Bobst Library.");
+
+<h2><a href="leaflet.html">Leaflet page</a></h2>
