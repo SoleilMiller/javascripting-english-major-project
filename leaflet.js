@@ -12,6 +12,7 @@ firstMap.setView([40.730833, -73.9975], 16);
 let Thwaitehouse;
 Thwaitehouse=L.marker([40.785091, -73.968285]);
 Thwaitehouse.addTo(firstMap);
+Thwaitehouse.bindPopup("This is The Thwaitehouse.");
 let ColumbiaUniversity;
 ColumbiaUniversity=L.marker([40.806290, -73.963005]);
 ColumbiaUniversity.addTo(firstMap);
