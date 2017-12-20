@@ -34,6 +34,6 @@ Publiclib=L.marker([ 40.753181, -73.982254]);
 Publiclib.addTo(firstMap);
 Publiclib.BlindPopup("This is the New York Public Library");
 let bobstLibrary;
-bobstLibrary = L.marker([40.729444, -73.997222]);
+bobstLibrary=L.marker([40.729444, -73.997222]);
 bobstLibrary.addTo(firstMap);
 bobstLibrary.bindPopup("This is Bobst Library.");
