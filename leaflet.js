@@ -41,3 +41,10 @@ let Frickcollection;
 Frickcollection=L.marker([40.7712, -73.9673]);
 Frickcollection.addTo(firstMap);
 Frickcollection.bindPopup("This is the Frick Collection");
+
+
+let md;
+md=window.markdownit({html: true}).use(window.markdownitFootnote);
+
+let html;
+html=md.render(markdown);
