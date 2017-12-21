@@ -1,16 +1,20 @@
 .map {
   height: 400px;
+  color: #000000
 }
 @import url("https://fonts.googleapis.com/css?family=Golden+Times");
 
 body {
   font-family: "Golden Times", serif;
+  color: #ffffff
 }
 
 .leaflet-container {
   font-family: "Golden Times", serif;
+  color: #ffffff
 }
 
 body, .leaflet-popup-content-wrapper, .leaflet-popup-tip {
-  background-color: #C0C0C0;
+  background-color: #800080;
+  color: #ffffff
 }
