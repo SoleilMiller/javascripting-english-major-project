@@ -20,7 +20,7 @@ ColumbiaUniversity.bindPopup("This is Columbia University. It is an Ivy League U
 let PortAuthority;
 PortAuthority=L.marker([40.756961, -73.990275]);
 PortAuthority.addTo(firstMap);
-PortAuthority.bindPopup("This is Port Authority bus station. Port Authority may be quite a surprise to be on this list of locations as it is a bus station and poeple of prominance and wealth do not exactly frequent buses, but it is important to consider the this location when speaking of the character Bootie. Bootie brings a new perspective into the book as well as new locations that we would not see the other characters. From his aprtment in Brooklyn to the article that he wrote about Murray Bootie is always pushing the Thwaite family and values. His arrival at Port Authority is just one of the first examples of that.");
+PortAuthority.bindPopup("This is Port Authority bus station. Port Authority may be quite a surprise to be on this list of locations as it is a bus station and poeple of prominance and wealth do not exactly frequent buses, but it is important to consider this location when speaking of the character Bootie. Bootie brings a new perspective into the book as well as new locations that we would not see the other characters. From his aprtment in Brooklyn to the article that he wrote about Murray, Bootie is always pushing the Thwaite family and values. His arrival at Port Authority is just one of the first examples of that.");
 let WorldTrade;
 WorldTrade=L.marker([40.712742, -74.013382]);
 WorldTrade.addTo(firstMap);
